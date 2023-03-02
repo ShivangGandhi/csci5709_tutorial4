@@ -87,6 +87,10 @@ URL: https://main--dreamy-marzipan-e24dd3.netlify.app/
 
 ## Sources Used
 
+#### Login.js
+
+* Image used: https://img.freepik.com/free-vector/business-running-overcoming-obstacles-concept-vector-cartoon-illustration_107791-41.jpg?1&w=740&t=st=1677799567~exp=1677800167~hmac=da48b1c944b9140f0e0c390b83b9b39cf13d3df41d4568dfb153c45bfb179463
+
 I used Axios Documentation to refer the syntax and usage of axios for dealing with APIs, refering the webiste [Axios](https://axios-http.com/). 
 
 - <!---How---> The code in [Axios](https://axios-http.com/) was implemented by Shivang by using get, post requests.

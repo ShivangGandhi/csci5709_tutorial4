@@ -1,11 +1,10 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import React, { useState } from 'react'
 import axios from 'axios';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 
 
@@ -42,7 +41,7 @@ export default function Profile() {
                             <Grid container spacing={3}>
                                 <Grid item xs={12} sm={6} >
                                     <Typography variant="h4" sx={{ fontSize: { xs: 32, md: 50 } }}>
-                                        {location.state.name}
+                                        {profile.name}
                                     </Typography>
                                     <Typography variant="body2">
                                         {location.state.email}
