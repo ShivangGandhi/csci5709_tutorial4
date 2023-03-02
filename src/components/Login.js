@@ -27,7 +27,7 @@ export default function Login() {
 
         const response = await axios.post(`https://express-t4.onrender.com/api/login`, loginData)
 
-        if (response.data.includes('Login success') === true) {
+        if (response.data.message.includes("Login success") === true) {
             navigate('/profileList')
         }
     }
