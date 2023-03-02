@@ -4,7 +4,7 @@
 * *Last Modification Date*: 02 March 2023
 * *Git URL (main branch)*: https://git.cs.dal.ca/shivangkum/csci5709
 * *Git URL (tutorial 3 branch)*: https://git.cs.dal.ca/shivangkum/csci5709/-/tree/tutorial4
-* *Deployment URL*: https://64013232968d730008cd5ae9--curious-centaur-b1abed.netlify.app/
+* *Deployment URL*: https://main--curious-centaur-b1abed.netlify.app/
 
 
 ## Authors
@@ -78,7 +78,7 @@ Add additional notes about how to deploy this on a live system
 - Deploy project with github/gitlab option
 - Configure Deployment settings
 
-URL: https://64013232968d730008cd5ae9--curious-centaur-b1abed.netlify.app/
+URL: https://main--curious-centaur-b1abed.netlify.app/
 
 
 ## Built With
