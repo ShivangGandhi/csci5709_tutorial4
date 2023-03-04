@@ -15,7 +15,7 @@ export default function Profile() {
 
     const [profile, setProfile] = useState([])
 
-    axios.get(`https://express-t4.onrender.com/api/users/:` + location.state._id)
+    axios.get(`https://express-t4.onrender.com/api/users/` + location.state._id)
         .then(res => {
             setProfile(res.data)
         })
@@ -34,7 +34,7 @@ export default function Profile() {
             <Paper sx={{ mx: { xs: 3, md: 5 }, my: { xs: 3, md: 5 }, p: { xs: 2, md: 3 } }}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={4} sx={{ margin: 'auto' }}>
-                        <Img alt="complex" src={location.state.picture} sx={{ borderRadius: '50%', border: '5px solid black' }} />
+                        <Img alt="complex" src={profile.picture} sx={{ borderRadius: '50%', border: '5px solid black' }} />
                     </Grid>
                     <Grid item xs={12} sm={8} sx={{ margin: 'auto' }}>
                         <Paper sx={{ p: { xs: 2 } }}>
@@ -44,26 +44,26 @@ export default function Profile() {
                                         {profile.name}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {location.state.email}
+                                        {profile.email}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {location.state.phone}
+                                        {profile.phone}
                                     </Typography>
                                     <Typography variant="body2">
-                                        Age: {location.state.age}
+                                        Age: {profile.age}
                                     </Typography>
                                     <Typography variant="body2">
-                                        Eye Color: {location.state.eyeColor}
+                                        Eye Color: {profile.eyeColor}
                                     </Typography>
                                     <Typography variant="body2">
-                                        Gender: {location.state.gender}
+                                        Gender: {profile.gender}
                                     </Typography>
                                     <Typography variant="body2">
-                                        Favorite Fruit: {location.state.favoriteFruit}
+                                        Favorite Fruit: {profile.favoriteFruit}
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12} sm={6} sx={{ margin: 'auto' }}>
-                                    {location.state.isActive ?
+                                    {profile.isActive ?
                                         (<Typography variant="body3" sx={{ color: 'green', fontWeight: 'bold' }}>
                                             Active
                                         </Typography>) : (
@@ -73,10 +73,10 @@ export default function Profile() {
                                         )}
                                     <br />
                                     <Typography variant="body3">
-                                        GUID: {location.state.guid}
+                                        GUID: {profile.guid}
                                     </Typography>
                                     <Typography variant="h4" sx={{ fontSize: { xs: 32, md: 50 } }}>
-                                        {location.state.balance}
+                                        {profile.balance}
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -88,22 +88,22 @@ export default function Profile() {
                     <Grid item xs={12} sm={6} sx={{ margin: 'auto' }}>
                         <Paper sx={{ p: { xs: 2 } }}>
                             <Typography variant="h6">
-                                <strong>Company:</strong> {location.state.company}
+                                <strong>Company:</strong> {profile.company}
                             </Typography>
                             <Typography variant="h6">
-                                <strong>Address:</strong> {location.state.address}
+                                <strong>Address:</strong> {profile.address}
                             </Typography>
                             <Typography variant="h6">
-                                <strong>Registered:</strong> {location.state.registered}
+                                <strong>Registered:</strong> {profile.registered}
                             </Typography>
                             <Typography variant="h6">
-                                <strong>Latitude:</strong> {location.state.latitude}
+                                <strong>Latitude:</strong> {profile.latitude}
                             </Typography>
                             <Typography variant="h6">
-                                <strong>Longitude:</strong> {location.state.longitude}
+                                <strong>Longitude:</strong> {profile.longitude}
                             </Typography>
                             <Typography variant="h6">
-                                <strong>About:</strong><br /> {location.state.about}
+                                <strong>About:</strong><br /> {profile.about}
                             </Typography>
                         </Paper>
                     </Grid>
